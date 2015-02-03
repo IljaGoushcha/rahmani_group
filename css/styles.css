@@ -17,3 +17,8 @@
 .footer li {
   color: grey;
 }
+.col-md-2, .col-md-4 {
+  border: 1px solid blue;
+  text-align: center;
+  height: 500px;
+}
