@@ -11,3 +11,9 @@
   margin-top: 6px;
   margin-left: 60px;
 }
+.footer {
+  background-color: whitesmoke;
+}
+.footer li {
+  color: grey;
+}
