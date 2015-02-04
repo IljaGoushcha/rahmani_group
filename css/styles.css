@@ -28,3 +28,13 @@
   height: 400px;
   /*margin-bottom: 100px;*/
 }
+.carousel-control.left, .carousel-control.right {
+  background-image: none
+}
+#slide1 li {
+  color: black;
+  text-align: left;
+  list-style-type: none;
+  text-shadow: none;
+  font-size: 1.4em;
+}
