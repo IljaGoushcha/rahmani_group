@@ -45,6 +45,7 @@ jQuery(document).ready(function() {
   $(window).on('resize', getHeight);
   $(window).on('resize', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', getHeight);
+  $('.carousel').on('slid.bs.carousel', changeWellHeight);
 
   $('#hotspot1').on('mouseenter', openHotSpot);
   $('#hotspot1').on('mouseleave', hideHotSpot);
