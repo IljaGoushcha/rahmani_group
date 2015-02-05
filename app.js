@@ -1,6 +1,7 @@
 function getHeight() {
   var height = $('#slide2').height();
   var width = $('#slide2 .carousel-caption').width();
+  console.log("say hello");
   console.log("height=" + height);
   console.log("width=" + width);
   $('#slide2 .carousel-caption').css({
@@ -35,6 +36,8 @@ jQuery(document).ready(function() {
   getHeight();
   hideHotSpots();
   $(window).on('resize', getHeight);
+  $('.carousel').on('slid.bs.carousel', getHeight);
+
   $('#hotspot1').on('mouseenter', openHotSpot);
   $('#hotspot1').on('mouseleave', hideHotSpot);
   $('#hotspot2').on('mouseenter', openHotSpot);
