@@ -32,7 +32,7 @@
   background-image: none
 }
 .carousel-caption {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 #slide1 li {
   color: black;
@@ -43,9 +43,46 @@
 }
 
 #slide2 .carousel-caption {
-  background-image: url("../images/timeline(1200_700).jpg");
+  background-image: url("../images/timeline(1200_800)(2).jpg");
   background-repeat: no-repeat;
-  background-size: 700px;
+  background-size: 100%;
   left: 13%;
   right: 13%;
+  padding: 0;
+}
+#hotspot1 {
+  border: 1px solid green;
+  border-radius: 50%;
+  position: relative;
+  left: 2.5%;
+}
+#hotspot1:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+#hotspot1 p {
+  border: 1px solid green;
+  position: relative;
+  width: 200px;
+  top: -40px;
+}
+#hotspot1 h4 {
+  position: relative;
+  left: 30px;
+}
+#hotspot2 {
+  border: 1px solid green;
+  border-radius: 50%;
+  position: relative;
+  left: 24%;
+}
+#hotspot2:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+#hotspot2 p {
+  border: 1px solid green;
+  position: relative;
+  width: 200px;
+  top: -40px;
 }
