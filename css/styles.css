@@ -25,7 +25,7 @@
   text-align: center;
 }
 .well {
-  height: 400px;
+  /*height: 250px;*/
   /*margin-bottom: 100px;*/
 }
 .carousel-control.left, .carousel-control.right {
@@ -46,6 +46,11 @@
   background-image: url("../images/timeline(1200_800)(2).jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  left: 13%;
+  right: 13%;
+  padding: 0;
+}
+#slide5 .carousel-caption {
   left: 13%;
   right: 13%;
   padding: 0;

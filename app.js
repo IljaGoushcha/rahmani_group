@@ -31,11 +31,19 @@ function openHotSpot() {
   console.log(this);
   $(this).children().show(500);
 }
+function changeWellHeight() {
+  var height = $('#slide5').height();
+  $('.well').css({
+    'height': height*0.38
+  });
+}
 
 jQuery(document).ready(function() {
   getHeight();
   hideHotSpots();
+  changeWellHeight();
   $(window).on('resize', getHeight);
+  $(window).on('resize', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', getHeight);
 
   $('#hotspot1').on('mouseenter', openHotSpot);
