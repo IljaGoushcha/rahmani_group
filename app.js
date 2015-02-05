@@ -32,7 +32,7 @@ function openHotSpot() {
   $(this).children().show(500);
 }
 function changeWellHeight() {
-  var height = $('#slide5').height();
+  var height = $(window).height();
   $('.well').css({
     'height': height*0.38
   });
