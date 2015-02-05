@@ -31,10 +31,21 @@
 .carousel-control.left, .carousel-control.right {
   background-image: none
 }
+.carousel-caption {
+  border: 1px solid red;
+}
 #slide1 li {
   color: black;
   text-align: left;
   list-style-type: none;
   text-shadow: none;
   font-size: 1.4em;
+}
+
+#slide2 .carousel-caption {
+  background-image: url("../images/timeline(1200_700).jpg");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  left: 13%;
+  right: 13%;
 }
