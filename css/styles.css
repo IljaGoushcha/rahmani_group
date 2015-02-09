@@ -87,3 +87,18 @@
   width: 200px;
   top: -40px;
 }
+#hotspot11 {
+  border: 1px solid green;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 67%;
+  left: 92%;
+}
+#slide6 .carousel-caption {
+  border: 1px solid green;
+  left: 15%;
+  right: 15%;
+  padding: 0;
+}

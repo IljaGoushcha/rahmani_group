@@ -37,13 +37,25 @@ function changeWellHeight() {
     'height': height*0.38
   });
 }
+function slide6ChangeHeight() {
+  var height = $('.item').height();
+  $('#slide6 .carousel-caption').css({
+    'height': height - 100
+  });
+  $('#hotspot11').css({
+    'height': height/15,
+    'width': height/15
+  });
+}
 
 jQuery(document).ready(function() {
   getHeight();
   hideHotSpots();
   changeWellHeight();
+  slide6ChangeHeight();
   $(window).on('resize', getHeight);
   $(window).on('resize', changeWellHeight);
+  $(window).on('resize', slide6ChangeHeight);
   $('.carousel').on('slid.bs.carousel', getHeight);
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
 
