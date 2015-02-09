@@ -40,7 +40,7 @@ function changeWellHeight() {
 function slide6ChangeHeight() {
   var height = $('.item').height();
   $('#slide6 .carousel-caption').css({
-    'height': height - 100
+    'height': height - 130
   });
   $('#hotspot11').css({
     'height': height/15,
