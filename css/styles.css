@@ -157,4 +157,20 @@
   top: 35%;
   left: 30%;
 }
+#hotspot-2013 {
+  position: relative;
+}
+#hotspot-2013-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#hotspot-2014 {
+  position: relative;
+}
+#hotspot-2014-message {
+  position: absolute;
+  top: 50%;
+  left: 62%;
+}
 

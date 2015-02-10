@@ -27,6 +27,8 @@ function hideHotSpots() {
   $('#hotspot-shariah-message').hide();
   $('#hotspot-sukuks-message').hide();
   $('#hotspot-translogistics-message').hide();
+  $('#hotspot-2013-message').hide();
+  $('#hotspot-2014-message').hide();
 }
 function hideHotSpot() {
   console.log(this);
@@ -89,5 +91,9 @@ jQuery(document).ready(function() {
   $('#hotspot-sukuks').on('mouseleave', hidePieHotSpot);
   $('#hotspot-translogistics').on('mouseenter', showPieHotSpot);
   $('#hotspot-translogistics').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-2013').on('mouseenter', showPieHotSpot);
+  $('#hotspot-2013').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-2014').on('mouseenter', showPieHotSpot);
+  $('#hotspot-2014').on('mouseleave', hidePieHotSpot);
 
 });
