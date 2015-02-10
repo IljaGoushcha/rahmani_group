@@ -25,6 +25,8 @@ function hideHotSpots() {
   $('#hotspot-equities-message').hide();
   $('#hotspot-realestate-message').hide();
   $('#hotspot-shariah-message').hide();
+  $('#hotspot-sukuks-message').hide();
+  $('#hotspot-translogistics-message').hide();
 }
 function hideHotSpot() {
   console.log(this);
@@ -83,5 +85,9 @@ jQuery(document).ready(function() {
   $('#hotspot-realestate').on('mouseleave', hidePieHotSpot);
   $('#hotspot-shariah').on('mouseenter', showPieHotSpot);
   $('#hotspot-shariah').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-sukuks').on('mouseenter', showPieHotSpot);
+  $('#hotspot-sukuks').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-translogistics').on('mouseenter', showPieHotSpot);
+  $('#hotspot-translogistics').on('mouseleave', hidePieHotSpot);
 
 });
