@@ -43,8 +43,9 @@ function callImgMapPlugin() {
   });
 }
 function showPieHotSpot() {
-  console.log(this);
-  $('#hotspot-gold-message').show(500);
+  var id = "#" + $(this).attr('id') + "-message";
+  console.log(id);
+  $(id).show(500);
 }
 function hidePieHotSpot() {
   console.log(this);
