@@ -38,7 +38,9 @@ function changeWellHeight() {
   });
 }
 function callImgMapPlugin() {
-  $('img[usemap]').rwdImageMaps();
+  jQuery(document).ready(function() {
+    $('img[usemap]').rwdImageMaps();
+  });
 }
 // function slide6ChangeHeight() {
 //   var height = $('.item').height();
