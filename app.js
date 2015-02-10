@@ -1,7 +1,6 @@
 function getHeight() {
   var height = $('#slide2').height();
   var width = $('#slide2 .carousel-caption').width();
-  console.log("say hello");
   console.log("height=" + height);
   console.log("width=" + width);
   $('#slide2 .carousel-caption').css({
@@ -38,6 +37,9 @@ function changeWellHeight() {
     'height': height*0.38
   });
 }
+function callImgMapPlugin() {
+  $('img[usemap]').rwdImageMaps();
+}
 // function slide6ChangeHeight() {
 //   var height = $('.item').height();
 
@@ -48,7 +50,7 @@ function changeWellHeight() {
 // }
 
 jQuery(document).ready(function() {
-  $('img[usemap]').rwdImageMaps();
+  // $('img[usemap]').rwdImageMaps();
   getHeight();
   hideHotSpots();
   changeWellHeight();
@@ -58,6 +60,7 @@ jQuery(document).ready(function() {
   // $(window).on('resize', slide6ChangeHeight);
   $('.carousel').on('slid.bs.carousel', getHeight);
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
+  $('.carousel').on('slid.bs.carousel', callImgMapPlugin);
 
   $('#hotspot1').on('mouseenter', openHotSpot);
   $('#hotspot1').on('mouseleave', hideHotSpot);
