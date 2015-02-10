@@ -42,24 +42,16 @@ function callImgMapPlugin() {
     $('img[usemap]').rwdImageMaps();
   });
 }
-// function slide6ChangeHeight() {
-//   var height = $('.item').height();
 
-//   $('#hotspot11').css({
-//     'height': height/15,
-//     'width': height/15
-//   });
-// }
 
 jQuery(document).ready(function() {
   // $('img[usemap]').rwdImageMaps();
   getHeight();
   hideHotSpots();
   changeWellHeight();
-  // slide6ChangeHeight();
   $(window).on('resize', getHeight);
   $(window).on('resize', changeWellHeight);
-  // $(window).on('resize', slide6ChangeHeight);
+
   $('.carousel').on('slid.bs.carousel', getHeight);
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', callImgMapPlugin);

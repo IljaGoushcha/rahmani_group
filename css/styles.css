@@ -87,19 +87,4 @@
   width: 200px;
   top: -40px;
 }
-#slide6 .carousel-caption {
-  /*border: 1px solid green;*/
-  left: 15%;
-  right: 15%;
-  padding: 0;
-}
 
-#hotspot11 {
-  border: 1px solid green;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  top: 69%;
-  left: 71%;
-}
