@@ -33,29 +33,31 @@ function openHotSpot() {
 }
 function changeWellHeight() {
   var height = $(window).height();
+  var width = $(window).width();
   $('.well').css({
     'height': height*0.38
   });
-}
-function slide6ChangeHeight() {
-  var height = $('.item').height();
-  $('#slide6 .carousel-caption').css({
-    'height': height - 130
-  });
-  $('#hotspot11').css({
-    'height': height/15,
-    'width': height/15
+  $('#piechart').css({
+    'width': width
   });
 }
+// function slide6ChangeHeight() {
+//   var height = $('.item').height();
+
+//   $('#hotspot11').css({
+//     'height': height/15,
+//     'width': height/15
+//   });
+// }
 
 jQuery(document).ready(function() {
   getHeight();
   hideHotSpots();
   changeWellHeight();
-  slide6ChangeHeight();
+  // slide6ChangeHeight();
   $(window).on('resize', getHeight);
   $(window).on('resize', changeWellHeight);
-  $(window).on('resize', slide6ChangeHeight);
+  // $(window).on('resize', slide6ChangeHeight);
   $('.carousel').on('slid.bs.carousel', getHeight);
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
 
