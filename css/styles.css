@@ -87,24 +87,51 @@
   width: 200px;
   top: -40px;
 }
+.hotspot {
+  border: 3px solid orange;
+  background-color: #E6E6E6;
+  border-radius: 10px;
+  color: grey;
+  width: 200px;
+  height: 100px;
+}
+.hotspot h5 {
+  margin-left: 10px;
+}
+.hotspot p {
+  margin-left: 20px;
+  margin-bottom: 1px;
+}
 #hotspot-gold {
   position: relative;
 }
 #hotspot-gold-message {
-  border: 3px solid orange;
-  background-color: #E6E6E6;
-  border-radius: 10px;
   position: absolute;
-  top: 30%;
-  left: 28%;
-  width: 200px;
-  height: 100px;
-  color: grey;
+  top: 45%;
+  left: 30%;
 }
-#hotspot-gold-message h5 {
-  margin-left: 10px;
+#hotspot-equities {
+  position: relative;
 }
-#hotspot-gold-message p {
-  margin-left: 20px;
-  margin-bottom: 1px;
+#hotspot-equities-message {
+  position: absolute;
+  top: 35%;
+  left: 30%;
 }
+#hotspot-realestate {
+  position: relative;
+}
+#hotspot-realestate-message {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+#hotspot-shariah {
+  position: relative;
+}
+#hotspot-shariah-message {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+

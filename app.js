@@ -21,6 +21,10 @@ function getHeight() {
 function hideHotSpots() {
   $('#hotspot1 p').hide();
   $('#hotspot2 p').hide();
+  $('#hotspot-gold-message').hide();
+  $('#hotspot-equities-message').hide();
+  $('#hotspot-realestate-message').hide();
+  $('#hotspot-shariah-message').hide();
 }
 function hideHotSpot() {
   console.log(this);
@@ -48,13 +52,14 @@ function showPieHotSpot() {
   $(id).show(500);
 }
 function hidePieHotSpot() {
+  var id = "#" + $(this).attr('id') + "-message";
   console.log(this);
-  $('#hotspot-gold-message').hide(500);
+  $(id).hide(500);
 }
 
 
 jQuery(document).ready(function() {
-  // $('img[usemap]').rwdImageMaps();
+
   getHeight();
   hideHotSpots();
   changeWellHeight();
@@ -72,4 +77,11 @@ jQuery(document).ready(function() {
 
   $('#hotspot-gold').on('mouseenter', showPieHotSpot);
   $('#hotspot-gold').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-equities').on('mouseenter', showPieHotSpot);
+  $('#hotspot-equities').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-realestate').on('mouseenter', showPieHotSpot);
+  $('#hotspot-realestate').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-shariah').on('mouseenter', showPieHotSpot);
+  $('#hotspot-shariah').on('mouseleave', hidePieHotSpot);
+
 });
