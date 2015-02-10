@@ -91,12 +91,20 @@
   position: relative;
 }
 #hotspot-gold-message {
-  border: 3px solid #B2B2B2;
-  background-color: whitesmoke;
+  border: 3px solid orange;
+  background-color: #E6E6E6;
   border-radius: 10px;
   position: absolute;
   top: 30%;
   left: 28%;
   width: 200px;
   height: 100px;
+  color: grey;
+}
+#hotspot-gold-message h5 {
+  margin-left: 10px;
+}
+#hotspot-gold-message p {
+  margin-left: 20px;
+  margin-bottom: 1px;
 }
