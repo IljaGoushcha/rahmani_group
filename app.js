@@ -42,6 +42,14 @@ function callImgMapPlugin() {
     $('img[usemap]').rwdImageMaps();
   });
 }
+function showPieHotSpot() {
+  console.log(this);
+  $('#hotspot-gold-message').show(500);
+}
+function hidePieHotSpot() {
+  console.log(this);
+  $('#hotspot-gold-message').hide(500);
+}
 
 
 jQuery(document).ready(function() {
@@ -60,4 +68,7 @@ jQuery(document).ready(function() {
   $('#hotspot1').on('mouseleave', hideHotSpot);
   $('#hotspot2').on('mouseenter', openHotSpot);
   $('#hotspot2').on('mouseleave', hideHotSpot);
+
+  $('#hotspot-gold').on('mouseenter', showPieHotSpot);
+  $('#hotspot-gold').on('mouseleave', hidePieHotSpot);
 });

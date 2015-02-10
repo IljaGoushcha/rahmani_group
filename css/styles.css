@@ -87,4 +87,16 @@
   width: 200px;
   top: -40px;
 }
-
+#hotspot-gold {
+  position: relative;
+}
+#hotspot-gold-message {
+  border: 3px solid #B2B2B2;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  width: 200px;
+  height: 100px;
+}
