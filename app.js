@@ -37,9 +37,6 @@ function changeWellHeight() {
   $('.well').css({
     'height': height*0.38
   });
-  $('#piechart').css({
-    'width': width
-  });
 }
 // function slide6ChangeHeight() {
 //   var height = $('.item').height();
@@ -51,6 +48,7 @@ function changeWellHeight() {
 // }
 
 jQuery(document).ready(function() {
+  $('img[usemap]').rwdImageMaps();
   getHeight();
   hideHotSpots();
   changeWellHeight();
