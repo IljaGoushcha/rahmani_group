@@ -1,26 +1,4 @@
-function getHeight() {
-  var height = $('#slide2').height();
-  var width = $('#slide2 .carousel-caption').width();
-  console.log("height=" + height);
-  console.log("width=" + width);
-  $('#slide2 .carousel-caption').css({
-    'height': height - 85,
-    'background-size': width
-  });
-  $('#hotspot1').css({
-    'top': (width*800/1200)*(700/800),
-    'height': width*0.05,
-    'width': width*0.05
-  });
-  $('#hotspot2').css({
-    'top': (width*800/1200)*(570/800),
-    'height': width*0.05,
-    'width': width*0.05
-  });
-}
 function hideHotSpots() {
-  $('#hotspot1 p').hide();
-  $('#hotspot2 p').hide();
   $('#hotspot-gold-message').hide();
   $('#hotspot-equities-message').hide();
   $('#hotspot-realestate-message').hide();
@@ -64,20 +42,12 @@ function hidePieHotSpot() {
 
 jQuery(document).ready(function() {
 
-  getHeight();
   hideHotSpots();
   changeWellHeight();
-  $(window).on('resize', getHeight);
   $(window).on('resize', changeWellHeight);
 
-  $('.carousel').on('slid.bs.carousel', getHeight);
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', callImgMapPlugin);
-
-  $('#hotspot1').on('mouseenter', openHotSpot);
-  $('#hotspot1').on('mouseleave', hideHotSpot);
-  $('#hotspot2').on('mouseenter', openHotSpot);
-  $('#hotspot2').on('mouseleave', hideHotSpot);
 
   $('#hotspot-gold').on('mouseenter', showPieHotSpot);
   $('#hotspot-gold').on('mouseleave', hidePieHotSpot);

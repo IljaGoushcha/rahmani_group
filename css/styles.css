@@ -31,9 +31,6 @@
 .carousel-control.left, .carousel-control.right {
   background-image: none
 }
-.carousel-caption {
-  /*border: 1px solid red;*/
-}
 #slide1 li {
   color: black;
   text-align: left;
