@@ -20,7 +20,14 @@ function changeWellHeight() {
   var height = $(window).height();
   var width = $(window).width();
   $('.well').css({
-    'height': height*0.38
+    'height': height*0.38,
+  });
+  $('#slide2-body li').css({
+    'font-size': height*26/700,
+    'margin-bottom': height*4/700
+  });
+  $('#slide2-body img').css({
+    'height': height*400/700,
   });
 }
 function callImgMapPlugin() {

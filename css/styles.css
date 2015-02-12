@@ -48,7 +48,7 @@
   position: relative;
 }
 #slide2-body {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   position: absolute;
   top: 15%;
   left: 10%;
@@ -60,10 +60,16 @@
   font-weight: normal;
   color: #665200;
 }
+#slide2-body img {
+  float: left;
+  height: 400px;
+  margin: 5px 30px 0 5px;
+}
 #slide2-body li {
   list-style-image: url('../images/check_green(2).png');
-  font-size: 1.2em;
+  font-size: 140%;
   color: #4C4C4C;
+  margin-bottom: 4px;
 }
 #slide5 .carousel-caption {
   left: 13%;
