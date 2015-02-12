@@ -37,26 +37,6 @@
 .carousel-control.left, .carousel-control.right {
   background-image: none
 }
-#slide1 li {
-  color: black;
-  text-align: left;
-  list-style-type: none;
-  text-shadow: none;
-  font-size: 1.4em;
-}
-#slide1 #RG-logo-large {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  height: 25%;
-}
-#slide1 h1 {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  font-size: 5em;
-}
-
 #slide2-body {
   /*border: 1px solid green;*/
   position: absolute;
@@ -68,7 +48,7 @@
 #slide2-body h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #665200;
+  color: white;
 }
 #slide2-body img {
   float: left;
