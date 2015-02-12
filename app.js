@@ -8,27 +8,36 @@ function hideHotSpots() {
   $('#hotspot-2013-message').hide();
   $('#hotspot-2014-message').hide();
 }
-function hideHotSpot() {
-  console.log(this);
-  $(this).children().hide(500);
-}
-function openHotSpot() {
-  console.log(this);
-  $(this).children().show(500);
-}
 function changeWellHeight() {
   var height = $(window).height();
   var width = $(window).width();
+  var bodyHeight = $('#slide2-body').height();
+  console.log("image height: " + bodyHeight);
   $('.well').css({
     'height': height*0.38,
   });
-  $('#slide2-body li').css({
-    'font-size': (height-70)*28/700,
-    'margin-bottom': (height-70)*5/700
-  });
-  $('#slide2-body img').css({
-    'height': height*400/700,
-  });
+  if (width < 700) {
+    console.log("width < 700");
+    $('#slide2-body img').css({
+      'height': bodyHeight*330/700
+    });
+    $('#slide2-body li').css({
+      'font-size': (bodyHeight)*25/700,
+      'margin-bottom': (bodyHeight)*4/700
+    });
+    $('#slide2-body li').css({
+      'list-style-image': 'none'
+    });
+  } else {
+    console.log("width > 700");
+    $('#slide2-body img').css({
+      'height': bodyHeight*500/700
+    });
+    $('#slide2-body li').css({
+      'font-size': (bodyHeight)*30/700,
+      'margin-bottom': (bodyHeight)*5/700
+    });
+  }
 }
 function callImgMapPlugin() {
   jQuery(document).ready(function() {
