@@ -23,8 +23,8 @@ function changeWellHeight() {
     'height': height*0.38,
   });
   $('#slide2-body li').css({
-    'font-size': height*26/700,
-    'margin-bottom': height*4/700
+    'font-size': (height-70)*28/700,
+    'margin-bottom': (height-70)*5/700
   });
   $('#slide2-body img').css({
     'height': height*400/700,
