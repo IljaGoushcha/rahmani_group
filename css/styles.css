@@ -44,6 +44,18 @@
   text-shadow: none;
   font-size: 1.4em;
 }
+#slide1 #RG-logo-large {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  height: 25%;
+}
+#slide1 h1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 5em;
+}
 
 #slide2-body {
   /*border: 1px solid green;*/
