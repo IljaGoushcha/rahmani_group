@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src: url('../fonts/HelveticaNeueLTStd-UltLt.otf');
+  font-style: normal;
+  font-weight: normal;
+}
 .navbar-brand {
   padding: 8px 5px;
   width: 250px;
@@ -37,6 +43,27 @@
   list-style-type: none;
   text-shadow: none;
   font-size: 1.4em;
+}
+#slide2 {
+  position: relative;
+}
+#slide2-body {
+  border: 1px solid green;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+#slide2-body h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #665200;
+}
+#slide2-body li {
+  list-style-image: url('../images/check_green(2).png');
+  font-size: 1.2em;
+  color: #4C4C4C;
 }
 #slide5 .carousel-caption {
   left: 13%;
