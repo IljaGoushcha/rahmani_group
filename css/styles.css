@@ -44,9 +44,7 @@
   text-shadow: none;
   font-size: 1.4em;
 }
-#slide2 {
-  position: relative;
-}
+
 #slide2-body {
   /*border: 1px solid green;*/
   position: absolute;
