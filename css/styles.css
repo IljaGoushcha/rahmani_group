@@ -4,6 +4,61 @@
   font-style: normal;
   font-weight: normal;
 }
+/* navbar */
+.navbar-black {
+    background-color: black;
+    border-color: black;
+}
+/* title */
+.navbar-black .navbar-brand {
+    color: #EDEBE6;
+}
+.navbar-black .navbar-brand:hover,
+.navbar-black .navbar-brand:focus {
+    color: #EDEBE6;
+}
+/* link */
+.navbar-black .navbar-nav > li > a {
+    color: #9E9E9E; /* navigation link titles */
+}
+.navbar-black .navbar-nav > li > a:hover,
+.navbar-black .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-black .navbar-nav > .active > a,
+.navbar-black .navbar-nav > .active > a:hover,
+.navbar-black .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-black .navbar-nav > .open > a,
+.navbar-black .navbar-nav > .open > a:hover,
+.navbar-black .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5; /* background when open */
+}
+/* mobile version */
+.navbar-black .navbar-toggle {
+    border-color: #9E9E9E; /* hamburger frame, original #DDD*/
+}
+.navbar-black .navbar-toggle:hover,
+.navbar-black .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-black .navbar-toggle .icon-bar {
+    background-color: #9E9E9E; /* hamburger bars, original #CCC */
+}
+@media (max-width: 767px) {
+    .navbar-black .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-black .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-black .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+/* end custom black navbar */
+
 .navbar-brand {
   padding: 8px 5px;
   width: 250px;
