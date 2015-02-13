@@ -111,7 +111,7 @@
 }
 #slide2-body li {
   list-style-image: url('../images/check_green(2).png');
-  color: #4C4C4C;
+  color: lightgrey;
 }
 #slide5 .carousel-caption {
   left: 13%;
