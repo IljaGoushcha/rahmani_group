@@ -73,10 +73,12 @@
   margin-left: 60px;
 }
 .footer {
-  background-color: whitesmoke;
+  background-color: black;
+  color: #ACABAB;
 }
-.footer li {
-  color: grey;
+.footer li, .footer li a:link, .footer li a:visited, .footer li a:hover, .footer li a:focus, .footer li a:focus {
+  color: #9E9E9E;
+  text-decoration: none;
 }
 .col-md-1, .col-md-6 {
   /*border: 1px solid blue;*/
@@ -84,10 +86,6 @@
 }
 .col-md-1 h1, .col-md-6 h1 {
   text-align: center;
-}
-.well {
-  /*height: 250px;*/
-  /*margin-bottom: 100px;*/
 }
 .carousel-control.left, .carousel-control.right {
   background-image: none
