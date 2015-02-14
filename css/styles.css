@@ -206,7 +206,7 @@
   /*border: 3px solid orange;*/
   /*border-radius: 10px;*/
   color: whitesmoke;
-  width: 15%;
+  width: 30%;
   height: 60%;
 }
 .hotspot-projects h1 {
@@ -223,13 +223,20 @@
 .hotspot-projects em {
   color: #33CC33;
 }
+.hotspot-projects-logo {
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 49%;
+  width: 30%;
+}
 #hotspot-cement {
   position: relative;
 }
 #hotspot-cement-message {
   position: absolute;
   top: 25%;
-  left: 15%;
+  left: 10%;
 }
 #hotspot-cement-image {
   position: absolute;
