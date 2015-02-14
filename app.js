@@ -7,6 +7,7 @@ function hideHotSpots() {
   $('#hotspot-translogistics-message').hide();
   $('#hotspot-2013-message').hide();
   $('#hotspot-2014-message').hide();
+  $('#hotspot-cement-message').hide();
 }
 function changeWellHeight() {
   var height = $(window).height();
@@ -81,5 +82,7 @@ jQuery(document).ready(function() {
   $('#hotspot-2013').on('mouseleave', hidePieHotSpot);
   $('#hotspot-2014').on('mouseenter', showPieHotSpot);
   $('#hotspot-2014').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-cement').on('mouseenter', showPieHotSpot);
+  $('#hotspot-cement').on('mouseleave', hidePieHotSpot);
 
 });

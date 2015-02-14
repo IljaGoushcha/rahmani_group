@@ -202,4 +202,34 @@
   top: 50%;
   left: 62%;
 }
+.hotspot2 {
+  border: 3px solid orange;
+  background-color: #E6E6E6;
+  border-radius: 10px;
+  color: grey;
+  width: 200px;
+  height: 150px;
+}
+.hotspot2 h5 {
+  margin-left: 10px;
+  color: #3366CC;
+}
+.hotspot2 p {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.hotspot2 em {
+  color: #33CC33;
+}
+#hotspot-cement {
+  position: relative;
+}
+#hotspot-cement-message {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
 
