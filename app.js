@@ -61,6 +61,7 @@ function showProjectsHotSpot() {
   var imageId = "#" + $(this).attr('id') + "-image";
   console.log(imageId);
   $(id).show(500);
+  $('.explore-projects').hide(500);
   $(imageId).show(500);
 
 }
@@ -69,6 +70,7 @@ function hideProjectsHotSpot() {
   var imageId = "#" + $(this).attr('id') + "-image";
   console.log(imageId);
   $(id).hide(500);
+  $('.explore-projects').show(500);
   $(imageId).hide(500);
 }
 
