@@ -8,6 +8,7 @@ function hideHotSpots() {
   $('#hotspot-2013-message').hide();
   $('#hotspot-2014-message').hide();
   $('#hotspot-cement-message').hide();
+  $('#hotspot-cement-image').hide();
 }
 function changeWellHeight() {
   var height = $(window).height();
@@ -55,6 +56,21 @@ function hidePieHotSpot() {
   console.log(this);
   $(id).hide(500);
 }
+function showProjectsHotSpot() {
+  var id = "#" + $(this).attr('id') + "-message";
+  var imageId = "#" + $(this).attr('id') + "-image";
+  console.log(imageId);
+  $(id).show(500);
+  $(imageId).show(500);
+
+}
+function hideProjectsHotSpot() {
+  var id = "#" + $(this).attr('id') + "-message";
+  var imageId = "#" + $(this).attr('id') + "-image";
+  console.log(imageId);
+  $(id).hide(500);
+  $(imageId).hide(500);
+}
 
 
 jQuery(document).ready(function() {
@@ -82,7 +98,7 @@ jQuery(document).ready(function() {
   $('#hotspot-2013').on('mouseleave', hidePieHotSpot);
   $('#hotspot-2014').on('mouseenter', showPieHotSpot);
   $('#hotspot-2014').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-cement').on('mouseenter', showPieHotSpot);
-  $('#hotspot-cement').on('mouseleave', hidePieHotSpot);
+  $('#hotspot-cement').on('mouseenter', showProjectsHotSpot);
+  $('#hotspot-cement').on('mouseleave', hideProjectsHotSpot);
 
 });
