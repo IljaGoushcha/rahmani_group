@@ -203,16 +203,15 @@
   left: 62%;
 }
 .hotspot-projects {
-  border: 3px solid orange;
-  background-color: #E6E6E6;
-  border-radius: 10px;
-  color: grey;
-  width: 200px;
-  height: 150px;
+  /*border: 3px solid orange;*/
+  /*border-radius: 10px;*/
+  color: whitesmoke;
+  width: 15%;
+  height: 60%;
 }
-.hotspot-projects h5 {
+.hotspot-projects h1 {
   margin-left: 10px;
-  color: #3366CC;
+  color: white;
 }
 .hotspot-projects p {
   margin-left: 20px;
@@ -229,8 +228,8 @@
 }
 #hotspot-cement-message {
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 25%;
+  left: 15%;
 }
 #hotspot-cement-image {
   position: absolute;
