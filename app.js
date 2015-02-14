@@ -60,18 +60,18 @@ function showProjectsHotSpot() {
   var id = "#" + $(this).attr('id') + "-message";
   var imageId = "#" + $(this).attr('id') + "-image";
   console.log(imageId);
-  $(id).show(500);
-  $('.explore-projects').hide(500);
-  $(imageId).show(500);
+  $(id).slideDown(500);
+  $('.explore-projects').fadeOut(200);
+  $(imageId).fadeIn(500);
 
 }
 function hideProjectsHotSpot() {
   var id = "#" + $(this).attr('id') + "-message";
   var imageId = "#" + $(this).attr('id') + "-image";
   console.log(imageId);
-  $(id).hide(500);
-  $('.explore-projects').show(500);
-  $(imageId).hide(500);
+  $(id).slideUp(500);
+  $('.explore-projects').fadeIn(1000);
+  $(imageId).fadeOut(500);
 }
 
 
