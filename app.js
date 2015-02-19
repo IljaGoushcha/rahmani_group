@@ -1,11 +1,8 @@
-function changeWellHeight() {
+function adjustSlide2() {
   var height = $(window).height();
   var width = $(window).width();
   var bodyHeight = $('#slide2-body').height();
   console.log("image height: " + bodyHeight);
-  $('.well').css({
-    'height': height*0.38,
-  });
   if (width < 700) {
     console.log("width < 700");
     $('#slide2-body img').css({
@@ -39,16 +36,20 @@ function toggleHotSpotMessage() {
   console.log("enter: " + id);
   $(id).slideToggle(500);
 }
+function toggleProjectsImages() {
+  $('#hotspot-cement-image').fadeToggle(500);
+  $('.explore-projects').fadeToggle(500);
+}
 
 
 jQuery(document).ready(function() {
 
-  changeWellHeight();
-  $(window).on('resize', changeWellHeight);
+  adjustSlide2();
+  $(window).on('resize', adjustSlide2);
 
-  $('.carousel').on('slid.bs.carousel', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', callImgMapPlugin);
 
   $('.hotspot-area').on('mouseenter mouseleave', toggleHotSpotMessage);
+  $('.hotspot-area').on('mouseenter mouseleave', toggleProjectsImages);
 
 });

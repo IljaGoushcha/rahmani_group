@@ -242,6 +242,7 @@
   left: 10%;
 }
 #hotspot-cement-image {
+  display: none;    /* needed to toggle hotspots*/
   position: absolute;
   top: 28%;
   left: 51.2%;
