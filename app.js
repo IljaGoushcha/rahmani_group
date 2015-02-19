@@ -1,4 +1,3 @@
-
 function changeWellHeight() {
   var height = $(window).height();
   var width = $(window).width();
@@ -35,34 +34,6 @@ function callImgMapPlugin() {
     $('img[usemap]').rwdImageMaps();
   });
 }
-function showPieHotSpot() {
-  var id = "#" + $(this).attr('id') + "-message";
-  console.log(id);
-  $(id).show(500);
-}
-function hidePieHotSpot() {
-  var id = "#" + $(this).attr('id') + "-message";
-  console.log(this);
-  $(id).hide(500);
-}
-function showProjectsHotSpot() {
-  var id = "#" + $(this).attr('id') + "-message";
-  var imageId = "#" + $(this).attr('id') + "-image";
-  console.log(imageId);
-  $(id).slideDown(500);
-  $('.explore-projects').fadeOut(200);
-  $(imageId).fadeIn(500);
-
-}
-function hideProjectsHotSpot() {
-  var id = "#" + $(this).attr('id') + "-message";
-  var imageId = "#" + $(this).attr('id') + "-image";
-  console.log(imageId);
-  $(id).slideUp(500);
-  $('.explore-projects').fadeIn(1000);
-  $(imageId).fadeOut(500);
-}
-
 function toggleHotSpotMessage() {
   var id = "#" + $(this).attr('id') + "-message";
   console.log("enter: " + id);
@@ -72,18 +43,12 @@ function toggleHotSpotMessage() {
 
 jQuery(document).ready(function() {
 
-
   changeWellHeight();
   $(window).on('resize', changeWellHeight);
 
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', callImgMapPlugin);
 
-
-  $('.hotspot-area').on('mouseleave', toggleHotSpotMessage);
-  $('.hotspot-area').on('mouseenter', toggleHotSpotMessage);
-
-  // $('#hotspot-cement').on('mouseenter', showProjectsHotSpot);
-  // $('#hotspot-cement').on('mouseleave', hideProjectsHotSpot);
+  $('.hotspot-area').on('mouseenter mouseleave', toggleHotSpotMessage);
 
 });
