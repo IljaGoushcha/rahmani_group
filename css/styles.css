@@ -111,12 +111,7 @@
   list-style-image: url('../images/check_green(2).png');
   color: lightgrey;
 }
-#slide5 .carousel-caption {
-  left: 13%;
-  right: 13%;
-  padding: 0;
-}
-.hotspot {
+.hotspot-pie-bar {
   border: 3px solid orange;
   background-color: #E6E6E6;
   border-radius: 10px;
@@ -124,18 +119,18 @@
   width: 200px;
   height: 150px;
 }
-.hotspot h5 {
+.hotspot-pie-bar h5 {
   margin-left: 10px;
   color: #3366CC;
 }
-.hotspot p {
+.hotspot-pie-bar p {
   margin-left: 20px;
   margin-top: 0;
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.hotspot em {
+.hotspot-pie-bar em {
   color: #33CC33;
 }
 #hotspot-gold {

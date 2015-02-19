@@ -73,6 +73,21 @@ function hideProjectsHotSpot() {
   $('.explore-projects').fadeIn(1000);
   $(imageId).fadeOut(500);
 }
+function hideHotSpotMessage() {
+  var id = "#" + $(this).attr('id') + "-message";
+  console.log("leave: " + id);
+  $(id).slideUp(500);
+}
+function showHotSpotMessage() {
+  var id = "#" + $(this).attr('id') + "-message";
+  console.log("enter: " + id);
+  $(id).slideDown(500);
+}
+function toggleHotSpotMessage() {
+  var id = "#" + $(this).attr('id') + "-message";
+  console.log("enter: " + id);
+  $(id).slideToggle(500);
+}
 
 
 jQuery(document).ready(function() {
@@ -84,8 +99,10 @@ jQuery(document).ready(function() {
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', callImgMapPlugin);
 
-  $('#hotspot-gold').on('mouseenter', showPieHotSpot);
-  $('#hotspot-gold').on('mouseleave', hidePieHotSpot);
+  // $('#hotspot-gold').on('mouseenter', showPieHotSpot);
+  // $('#hotspot-gold').on('mouseleave', hidePieHotSpot);
+  $('.hotspot1').on('mouseleave', toggleHotSpotMessage);
+  $('.hotspot1').on('mouseenter', toggleHotSpotMessage);
   $('#hotspot-equities').on('mouseenter', showPieHotSpot);
   $('#hotspot-equities').on('mouseleave', hidePieHotSpot);
   $('#hotspot-realestate').on('mouseenter', showPieHotSpot);
