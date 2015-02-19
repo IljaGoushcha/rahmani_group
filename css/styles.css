@@ -112,6 +112,7 @@
   color: lightgrey;
 }
 .hotspot-pie-bar {
+  display: none;    /* needed to toggle hotspots*/
   border: 3px solid orange;
   background-color: #E6E6E6;
   border-radius: 10px;
@@ -200,6 +201,7 @@
 .hotspot-projects {
   /*border: 3px solid orange;*/
   /*border-radius: 10px;*/
+  display: none;    /* needed to toggle hotspots*/
   color: whitesmoke;
   width: 30%;
   height: 60%;

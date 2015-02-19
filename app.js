@@ -1,15 +1,4 @@
-function hideHotSpots() {
-  $('#hotspot-gold-message').hide();
-  $('#hotspot-equities-message').hide();
-  $('#hotspot-realestate-message').hide();
-  $('#hotspot-shariah-message').hide();
-  $('#hotspot-sukuks-message').hide();
-  $('#hotspot-translogistics-message').hide();
-  $('#hotspot-2013-message').hide();
-  $('#hotspot-2014-message').hide();
-  $('#hotspot-cement-message').hide();
-  $('#hotspot-cement-image').hide();
-}
+
 function changeWellHeight() {
   var height = $(window).height();
   var width = $(window).width();
@@ -73,16 +62,7 @@ function hideProjectsHotSpot() {
   $('.explore-projects').fadeIn(1000);
   $(imageId).fadeOut(500);
 }
-function hideHotSpotMessage() {
-  var id = "#" + $(this).attr('id') + "-message";
-  console.log("leave: " + id);
-  $(id).slideUp(500);
-}
-function showHotSpotMessage() {
-  var id = "#" + $(this).attr('id') + "-message";
-  console.log("enter: " + id);
-  $(id).slideDown(500);
-}
+
 function toggleHotSpotMessage() {
   var id = "#" + $(this).attr('id') + "-message";
   console.log("enter: " + id);
@@ -92,32 +72,18 @@ function toggleHotSpotMessage() {
 
 jQuery(document).ready(function() {
 
-  hideHotSpots();
+
   changeWellHeight();
   $(window).on('resize', changeWellHeight);
 
   $('.carousel').on('slid.bs.carousel', changeWellHeight);
   $('.carousel').on('slid.bs.carousel', callImgMapPlugin);
 
-  // $('#hotspot-gold').on('mouseenter', showPieHotSpot);
-  // $('#hotspot-gold').on('mouseleave', hidePieHotSpot);
-  $('.hotspot1').on('mouseleave', toggleHotSpotMessage);
-  $('.hotspot1').on('mouseenter', toggleHotSpotMessage);
-  $('#hotspot-equities').on('mouseenter', showPieHotSpot);
-  $('#hotspot-equities').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-realestate').on('mouseenter', showPieHotSpot);
-  $('#hotspot-realestate').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-shariah').on('mouseenter', showPieHotSpot);
-  $('#hotspot-shariah').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-sukuks').on('mouseenter', showPieHotSpot);
-  $('#hotspot-sukuks').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-translogistics').on('mouseenter', showPieHotSpot);
-  $('#hotspot-translogistics').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-2013').on('mouseenter', showPieHotSpot);
-  $('#hotspot-2013').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-2014').on('mouseenter', showPieHotSpot);
-  $('#hotspot-2014').on('mouseleave', hidePieHotSpot);
-  $('#hotspot-cement').on('mouseenter', showProjectsHotSpot);
-  $('#hotspot-cement').on('mouseleave', hideProjectsHotSpot);
+
+  $('.hotspot-area').on('mouseleave', toggleHotSpotMessage);
+  $('.hotspot-area').on('mouseenter', toggleHotSpotMessage);
+
+  // $('#hotspot-cement').on('mouseenter', showProjectsHotSpot);
+  // $('#hotspot-cement').on('mouseleave', hideProjectsHotSpot);
 
 });
